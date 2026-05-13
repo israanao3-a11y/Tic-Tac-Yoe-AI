@@ -1,29 +1,31 @@
 # 🎮 Tic-Tac-Toe AI (Algorithme Minimax)
 
-> Un agent intelligent imbattable développé en Python pour le jeu du Morpion.
+> **Un agent intelligent imbattable** développé en Python. Ce projet utilise l'algorithme Minimax pour garantir une stratégie de jeu optimale.
+
+---
 
 ## 🌟 Présentation du Projet
-Ce projet a été réalisé dans le cadre d'un **TP d'Intelligence Artificielle**. L'objectif est d'implémenter l'algorithme de recherche **Minimax** pour créer un agent capable de jouer de manière optimale au Tic-Tac-Toe.
+Ce projet a été réalisé dans le cadre d'un **TP d'Intelligence Artificielle**. L'objectif est de concevoir un jeu de Morpion (Tic-Tac-Toe) où l'ordinateur analyse toutes les possibilités futures pour choisir le meilleur coup possible.
 
-## 🧠 L'Intelligence derrière le jeu
-L'agent utilise une approche de recherche dans l'espace d'états :
-- **Algorithme** : Minimax (Récursif).
-- **Heuristique** : 
-  - `+1` si l'ordinateur (O) gagne.
-  - `-1` si l'humain (X) gagne.
-  - `0` pour un match nul.
-- **Complexité** : L'IA explore toutes les combinaisons possibles pour garantir qu'elle ne perde jamais.
+## 🧠 Concepts d'Intelligence Artificielle
+L'agent repose sur les piliers suivants :
+* **Algorithme Minimax** : Exploration récursive de l'arbre des états.
+* **Fonction d'Évaluation** : Attribution de scores pour quantifier l'avantage (IA : +1, Humain : -1, Nul : 0).
+* **Espace d'états** : Analyse de toutes les configurations possibles du plateau 3x3.
 
-## 🛠️ Structure Technique
-Le code est structuré de manière modulaire pour une meilleure lisibilité :
-* `evaluate_board()` : Analyse le plateau pour détecter un vainqueur.
-* `is_game_over()` : Détermine si la partie est terminée.
-* `minimax()` : Calcule le meilleur score possible pour chaque mouvement.
-* `find_best_move()` : Sélectionne la coordonnée optimale.
-* `main()` : Gère l'interface utilisateur et la boucle de jeu.
+## 🛠️ Architecture du Code
+Le programme est structuré de manière modulaire :
 
-## 🚀 Installation et Utilisation
+| Fonction | Description |
+| :--- | :--- |
+| `evaluate_board` | Analyse le plateau et retourne le score heuristique. |
+| `is_game_over` | Détecte si la partie est terminée (victoire ou match nul). |
+| `minimax` | Calcule de manière récursive la valeur de chaque position. |
+| `find_best_move` | Sélectionne la coordonnée optimale pour l'ordinateur. |
+| `main` | Gère l'interface utilisateur, les entrées et la boucle de jeu. |
 
-1. **Cloner le projet** :
+## 🚀 Installation et Lancement
+
+1. **Cloner le dépôt :**
    ```bash
    git clone [https://github.com/israanao3-a11y/Tic-Tac-Yoe-AI.git](https://github.com/israanao3-a11y/Tic-Tac-Yoe-AI.git)
